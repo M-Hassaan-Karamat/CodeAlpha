@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chatbot.ChatBotController" spacing="10" style="-fx-padding: 10;">
+    <TextArea fx:id="chatArea" editable="false" wrapText="true" VBox.vgrow="ALWAYS" style="-fx-font-family: 'Arial'; -fx-font-size: 14px;"/>
+    <HBox spacing="10">
+        <TextField fx:id="userInput" HBox.hgrow="ALWAYS" onAction="#handleSendMessage" promptText="Type your message here..." style="-fx-font-family: 'Arial'; -fx-font-size: 14px;"/>
+        <Button text="Send" onAction="#handleSendMessage" style="-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-background-color: #4CAF50; -fx-text-fill: white;"/>
+    </HBox>
+</VBox>
